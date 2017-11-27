@@ -1,0 +1,24 @@
+jobs:
+- name: deploy-app
+  plan:
+  - get: a9s-concourse-ci-test
+  - get: ruby-sinatra
+    trigger: true
+  - task: clone-and-deploy
+    file: a9s-concourse-ci-test/pipline-tasks/clone-and-deploy.yml
+    params:
+      cf_user: ((cf_user))
+      cf_password: ((cf_password))
+      cf_space: ((cf_space))
+      cf_org: ((cf_org))
+ 
+resources:
+- name: a9s-concourse-ci-test
+  type: git
+  source:
+    uri: https://github.com/difoul/a9s-cncourse-ci.git
+
+- name: ruby-sinatra
+  type: git
+  source:
+    uri: https://github.com/difoul/ruby-sinatra.git

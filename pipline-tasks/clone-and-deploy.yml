@@ -1,0 +1,12 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: robotgraves/curl-git}
+
+inputs:
+- name: a9s-concourse-ci-test
+
+run:
+  path: ./9s-concourse-ci-test/ruby-test-task/test.sh

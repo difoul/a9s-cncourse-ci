@@ -1,0 +1,4 @@
+cf_user: <YOUR_CF_USERNAME>
+cf_password: <YOUR_CF_PASSWORD>
+cf_space: <CF_SPACE>
+cf_org: <CF_ORG>
