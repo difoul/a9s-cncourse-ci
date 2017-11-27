@@ -9,4 +9,4 @@ inputs:
 - name: a9s-concourse-ci-test
 
 run:
-  path: ./9s-concourse-ci-test/ruby-test-task/test.sh
+  path: 9s-concourse-ci-test/ruby-test-task/test.sh
