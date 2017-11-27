@@ -9,4 +9,4 @@ inputs:
 - name: a9s-concourse-ci-test
 
 run:
-  path: 9s-concourse-ci-test/pipline-tasks/clone-and-deploy.sh
+  path: a9s-concourse-ci-test/pipline-tasks/clone-and-deploy.sh
